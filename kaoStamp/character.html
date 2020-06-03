@@ -1,140 +1,96 @@
-header{
-  text-align: center;
-}
-header a{
-  color:rgb(238, 192, 192);
-  font-family:  "メイリオ", "Meiryo", sans-serif;
-  font-size:10px;
-  text-decoration: none;
-}
-header a:hover{
-  opacity:0.4;
-}
-body{
-  font-size:14px;
-  margin:0 auto;
-}
-.container{
-  height:650px;
-  max-width: 330px;
-  margin:20px auto;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>スタンプ紹介 - かおのスタンプ宣伝サイト</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/character.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+  <header>
+    <a href="index.html" class="top">TOPに戻る</a>
+  </header>
 
-.menu{
-  list-style:none;
-  padding:0;
-  margin:0;
-  display:flex;
-  
-}
-.menu img{
-  width:40px;
-  vertical-align:bottom;
-}
+  <body>
+    <div class="container">
+      <ul class="menu">
+        <li><a href="" class="active" id="syugou" data-id="syugouinfo"><img src="icon/syugou.png" id="syugou"></a></li>
+        <li><a href="" id="tsutomu1" data-id="tsutomu1info"><img src="icon/tsutomu1.png" id="tsutomu1"></a></li>
+        <li><a href="" id="tsutomu2" data-id="tsutomu2info"><img src="icon/tsutomu2.png" id="tsutomu2"></a></li>
+        <li><a href="" id="fenec" data-id="fenecinfo"><img src="icon/fenec.png" id="fenec"></a></li>
+      </ul>
 
-.menu li a{
-  display:inline-block;
-  width:60px;
-  text-align:center;
-  padding:8px 0;
-  margin:0 10px;
-  text-decoration: none;
-  line-height:10px;
-  border-radius:100%;
-  vertical-align:bottom;
-  
-}
+      <section class="content active" id="syugouinfo">
+       <div class="info">
+        <h1>キモキャラ集合スタンプ</h1>
+         <p class="explain">ふざけたい時のキモきゃらスタンプです。</p>
 
-.menu li a.active{
-  background: rgb(238, 192, 192);
-  border-bottom:none;
-}
-.menu li a:not(.active):hover{
-  opacity:0.5;
-  transition: opacity 0.4s;
-}
+         <img id="main1">
 
-.content.active{
-  display:block;
-  min-height:300px;
-  padding:12px;
-}
-.content{
-  display:none;
-}
+        <div class="prices">
+         <p class="price">¥120</p>
+         <a class="line" href="https://store.line.me/stickershop/product/3914864/ja?from=sticker" target="_blank">LINEの購入ページへ</a>
+        </div>
+      </div>
 
-section{
-  text-align:center;
-}
+      <ul class="thumbnails1">
+      </ul>
+     </section>
 
-.info h1{
-  color:black;
-  font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-size:25px;
-  margin:0;
-}
-.explain{
-  color:rgb(184, 184, 184);
-  font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  margin:0;
-}
+     <section class="content" id="tsutomu1info">
+      <div class="info">
+       <h1>つとむくんの１</h1>
+       <p class="explain">つとむくん（知り合いがモデル）のスタンプの１です。</p>
+      
+       <img id="main2">
 
-.price{
-  color:rgb(137, 216, 121);
-  font-family: "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-size:20px;
-  font-weight:bold;
-  margin:0 20px;
-  display: inline-block;
-  vertical-align:bottom;
-}
+      <div class="prices">
+       <p class="price">¥120</p>
+       <a class="line" href="https://store.line.me/stickershop/product/3858906/ja?from=sticker" target="_blank">LINEの購入ページへ</a>
+      </div>
+     </div>
+     <ul class="thumbnails2"></ul>
+    </section>
 
-.prices{
-  margin-top:20px;
-  margin-bottom:20px;
-}
 
-.line{
-  text-decoration:none;
-  color:white;
-  font-size:10px;
-  background-color:rgb(137, 216, 121);
-  line-height:30px;
-  display: inline-block;
-  padding:4px;
-  width:100px;
-  border-radius:4px;
-}
+    <section class="content" id="tsutomu2info">
+      <div class="info">
+        <h1>つとむくんの２
+        </h1>
+        <p class="explain">つとむくんのスタンプの２です。</p>
+        
+        <img id="main3">
+ 
+       <div class="prices">
+        <p class="price">¥120</p>
+        <a class="line" href="https://store.line.me/stickershop/product/3828321/ja?from=sticker" target="_blank">LINEの購入ページへ</a>
+       </div>
+      </div>
+      <ul class="thumbnails3"></ul>
+    </section>
+    
+    <section class="content" id="fenecinfo">
+      <div class="info">
+        <h1>フェネックのようなもの</h1>
+        <p class="explain">フェネックのようなものです。</p>
+ 
+        <img id="main4">
+ 
+       <div class="prices">
+        <p class="price">¥120</p>
+        <a class="line" href="https://store.line.me/stickershop/product/3848565/ja?from=sticker" target="_blank">LINEの購入ページへ</a>
+       </div>
+      </div>
+      <ul class="thumbnails4"></ul>
+    </section>
+    </div>
+    
+  <script src="js/main.js"></script>
+ 
+  </body>
+  <footer>
+  </footer>
 
-.line:hover{
-  opacity:0.4;
-}
-
-#main1,#main2,#main3,#main4{
-  width:200px;
-  height:200px;
-}
-
-.thumbnails1,.thumbnails2,.thumbnails3,.thumbnails4{
-  display: grid;
-  grid-template-columns:repeat(5,56px);
-  gap:5px;
-}
-.thumbnails1 li,.thumbnails2 li,.thumbnails3 li,.thumbnails4 li{
-  cursor:pointer;
-  opacity:0.4;
-}
-.thumbnails1 li:hover,.thumbnails1 li.current,.thumbnails2 li:hover,.thumbnails2 li.current,.thumbnails3 li:hover,.thumbnails3 li.current,.thumbnails4 li:hover,.thumbnails4 li.current{
-  opacity:1;
-}
-
-ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.thumbnails1 img,.thumbnails2 img,.thumbnails3 img,.thumbnails4 img{
-  width:56px;
-}
-
+</html>
