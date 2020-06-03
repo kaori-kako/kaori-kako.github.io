@@ -71,7 +71,9 @@
 
   const menuItems = document.querySelectorAll('.menu li a');
   const contents = document.querySelectorAll('.content');
-  
+  var selectedStamp = '';
+  syugouStamp();
+
   menuItems.forEach(item => {
     item.addEventListener('click',e   =>{
       e.preventDefault();
@@ -83,12 +85,24 @@
       contents.forEach(content => {
         content.classList.remove('active');
       });
-      document.getElementById(item.dataset.id).classList.add('active');  
+      document.getElementById(item.dataset.id).classList.add('active'); 
+      selectedStamp = e.target.id;
+      if(selectedStamp == "syugou"){
+        syugouStamp();
+      }else if(selectedStamp == "tsutomu1"){
+        tsutomu1Stamp();
+      }else if(selectedStamp == "tsutomu2"){
+        tsutomu2Stamp();
+      }else if(selectedStamp == "fenec"){
+        fenecStamp();
+      }
     });
   });
 
+
+function syugouStamp(){
   let currentIndex = 0;
-  const mainImage = document.getElementById('#main');  
+  const mainImage = document.getElementById('main1');  
   mainImage.src = syugou[currentIndex];
 
   syugou.forEach((image,index) => {
@@ -109,4 +123,79 @@
   li.appendChild(img);
   document.querySelector('.thumbnails').appendChild(li);
 });
+}
+
+function tsutomu1Stamp(){
+  let currentIndex = 0;
+  const mainImage = document.getElementById('main2');  
+  mainImage.src=tsutomu1[currentIndex];
+  tsutomu1.forEach((image,index) => {
+  const img = document.createElement('img');
+  img.src = image;
+
+  const li = document.createElement('li');
+  if(index == currentIndex){
+    li.classList.add('current');
+  }
+  li.addEventListener('click',() =>{
+    mainImage.src = image;
+    const thumbnails = document.querySelectorAll('.thumbnails > li');
+    thumbnails[currentIndex].classList.remove('current');
+    currentIndex = index;
+    thumbnails[currentIndex].classList.add('current');
+  });
+  li.appendChild(img);
+  document.querySelector('.thumbnails').appendChild(li)
+});
+}
+
+
+function tsutomu2Stamp(){
+  let currentIndex = 0;
+  const mainImage = document.getElementById('main3');  
+  mainImage.src=tsutomu2[currentIndex];
+  tsutomu2.forEach((image,index) => {
+  const img = document.createElement('img');
+  img.src = image;
+
+  const li = document.createElement('li');
+  if(index == currentIndex){
+    li.classList.add('current');
+  }
+  li.addEventListener('click',() =>{
+    mainImage.src = image;
+    const thumbnails = document.querySelectorAll('.thumbnails > li');
+    thumbnails[currentIndex].classList.remove('current');
+    currentIndex = index;
+    thumbnails[currentIndex].classList.add('current');
+  });
+  li.appendChild(img);
+  document.querySelector('.thumbnails').appendChild(li)
+});
+}
+
+
+function fenecStamp(){
+  let currentIndex = 0;
+  const mainImage = document.getElementById('main4');  
+  mainImage.src=fenec[currentIndex];
+  fenec.forEach((image,index) => {
+  const img = document.createElement('img');
+  img.src = image;
+
+  const li = document.createElement('li');
+  if(index == currentIndex){
+    li.classList.add('current');
+  }
+  li.addEventListener('click',() =>{
+    mainImage.src = image;
+    const thumbnails = document.querySelectorAll('.thumbnails > li');
+    thumbnails[currentIndex].classList.remove('current');
+    currentIndex = index;
+    thumbnails[currentIndex].classList.add('current');
+  });
+  li.appendChild(img);
+  document.querySelector('.thumbnails').appendChild(li)
+});
+}
 }
