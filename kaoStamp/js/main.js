@@ -73,7 +73,9 @@
   const contents = document.querySelectorAll('.content');
   var selectedStamp = '';
   syugouStamp();
-
+  tsutomu1Stamp();
+  tsutomu2Stamp();
+  fenecStamp();
   menuItems.forEach(item => {
     item.addEventListener('click',e   =>{
       e.preventDefault();
@@ -86,16 +88,6 @@
         content.classList.remove('active');
       });
       document.getElementById(item.dataset.id).classList.add('active'); 
-      selectedStamp = e.target.id;
-      if(selectedStamp == "syugou"){
-        syugouStamp();
-      }else if(selectedStamp == "tsutomu1"){
-        tsutomu1Stamp();
-      }else if(selectedStamp == "tsutomu2"){
-        tsutomu2Stamp();
-      }else if(selectedStamp == "fenec"){
-        fenecStamp();
-      }
     });
   });
 
@@ -115,13 +107,13 @@ function syugouStamp(){
   }
   li.addEventListener('click',() =>{
     mainImage.src = image;
-    const thumbnails = document.querySelectorAll('.thumbnails > li');
+    const thumbnails = document.querySelectorAll('.thumbnails1 > li');
     thumbnails[currentIndex].classList.remove('current');
     currentIndex = index;
     thumbnails[currentIndex].classList.add('current');
   });
   li.appendChild(img);
-  document.querySelector('.thumbnails').appendChild(li);
+  document.querySelector('.thumbnails1').appendChild(li);
 });
 }
 
@@ -139,13 +131,13 @@ function tsutomu1Stamp(){
   }
   li.addEventListener('click',() =>{
     mainImage.src = image;
-    const thumbnails = document.querySelectorAll('.thumbnails > li');
+    const thumbnails = document.querySelectorAll('.thumbnails2 > li');
     thumbnails[currentIndex].classList.remove('current');
     currentIndex = index;
     thumbnails[currentIndex].classList.add('current');
   });
   li.appendChild(img);
-  document.querySelector('.thumbnails').appendChild(li)
+  document.querySelector('.thumbnails2').appendChild(li)
 });
 }
 
@@ -164,13 +156,13 @@ function tsutomu2Stamp(){
   }
   li.addEventListener('click',() =>{
     mainImage.src = image;
-    const thumbnails = document.querySelectorAll('.thumbnails > li');
+    const thumbnails = document.querySelectorAll('.thumbnails3 > li');
     thumbnails[currentIndex].classList.remove('current');
     currentIndex = index;
     thumbnails[currentIndex].classList.add('current');
   });
   li.appendChild(img);
-  document.querySelector('.thumbnails').appendChild(li)
+  document.querySelector('.thumbnails3').appendChild(li)
 });
 }
 
@@ -189,13 +181,13 @@ function fenecStamp(){
   }
   li.addEventListener('click',() =>{
     mainImage.src = image;
-    const thumbnails = document.querySelectorAll('.thumbnails > li');
+    const thumbnails = document.querySelectorAll('.thumbnails4 > li');
     thumbnails[currentIndex].classList.remove('current');
     currentIndex = index;
     thumbnails[currentIndex].classList.add('current');
   });
   li.appendChild(img);
-  document.querySelector('.thumbnails').appendChild(li)
+  document.querySelector('.thumbnails4').appendChild(li)
 });
 }
 }
