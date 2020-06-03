@@ -1,3 +1,15 @@
+header{
+  text-align: center;
+}
+header a{
+  color:rgb(238, 192, 192);
+  font-family:  "メイリオ", "Meiryo", sans-serif;
+  font-size:10px;
+  text-decoration: none;
+}
+header a:hover{
+  opacity:0.4;
+}
 body{
   font-size:14px;
   margin:0 auto;
@@ -5,7 +17,7 @@ body{
 .container{
   height:650px;
   max-width: 330px;
-  margin:50px auto;
+  margin:20px auto;
 }
 
 .menu{
