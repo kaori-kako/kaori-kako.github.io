@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>かおのスタンプ宣伝サイト</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+  <header>
+  </header>
+  <body>
+    <div class="container">
+      <div class="info">
+          <h1 id="target">かおのLINEスタンプ宣伝サイト</h1>
+      </div>
+
+    <div class="topimages">
+      <div class="image">
+        <img id="image" src="img/syugou/syugou1.png" style="display: none">
+      </div>
+      <div class="hukidashi">
+        <img  id="hukidashi" src="hukidashi.png" style="display: none">
+         <a href="character.html" id="enter" style="display: none">みてみる!</a>  
+      </div>
+    </div>
+     
+    </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+     $(function(){
+       
+    $('#target').children().addBack().contents().each(function() {
+      if (this.nodeType == 3) {
+      $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>')); }
+    });    
+    for (var i = 0; i <= $('#target').children().size(); i++) {
+      $('#target').children().eq(i).delay(100*i).animate({opacity:1},150);
+    };
+
+    $('#image').fadeIn(2000);
+    setTimeout(function(){$('#hukidashi').fadeIn(500);},2000);
+    setTimeout(function(){$('#enter').fadeIn(500);},2000);
+
+
+    });
+
+  </script>
+
+  </body> 
+
+</html>

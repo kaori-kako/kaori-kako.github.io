@@ -1,0 +1,126 @@
+body{
+  font-size:14px;
+  margin:0 auto;
+}
+.container{
+  height:650px;
+  max-width: 330px;
+  margin:50px auto;
+}
+
+.menu{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  
+}
+.menu img{
+  width:40px;
+  vertical-align:bottom;
+}
+
+.menu li a{
+  display:inline-block;
+  width:60px;
+  text-align:center;
+  padding:8px 0;
+  margin:0 10px;
+  text-decoration: none;
+  line-height:10px;
+  border-radius:100%;
+  vertical-align:bottom;
+  
+}
+
+.menu li a.active{
+  background: rgb(238, 192, 192);
+  border-bottom:none;
+}
+.menu li a:not(.active):hover{
+  opacity:0.5;
+  transition: opacity 0.4s;
+}
+
+.content.active{
+  display:block;
+  min-height:300px;
+  padding:12px;
+}
+.content{
+  display:none;
+}
+
+section{
+  text-align:center;
+}
+
+.info h1{
+  color:black;
+  font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size:25px;
+  margin:0;
+}
+.explain{
+  color:rgb(184, 184, 184);
+  font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  margin:0;
+}
+
+.price{
+  color:rgb(137, 216, 121);
+  font-family: "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  margin:0 20px;
+  display: inline-block;
+  vertical-align:bottom;
+}
+
+.prices{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.line{
+  text-decoration:none;
+  font-size:4px;
+  color:white;
+  background-color:rgb(137, 216, 121);
+  line-height:30px;
+  display: inline-block;
+  padding:4px;
+  width:100px;
+  border-radius:4px;
+}
+.line:hover{
+  opacity:0.4;
+}
+
+#main{
+  width:200px;
+}
+
+.thumbnails{
+  display: grid;
+  grid-template-columns:repeat(5,56px);
+  gap:5px;
+}
+.thumbnails li{
+  cursor:pointer;
+  opacity:0.4;
+}
+.thumbnails li:hover,.thumbnails li.current{
+  opacity:1;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.thumbnails img{
+  width:56px;
+}
+
