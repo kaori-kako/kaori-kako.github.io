@@ -97,8 +97,9 @@ section{
   opacity:0.4;
 }
 
-#main{
+#main1,#main2,#main3,#main4{
   width:200px;
+  height:200px;
 }
 
 .thumbnails{
