@@ -84,8 +84,8 @@ section{
 
 .line{
   text-decoration:none;
-  font-size:10px;
   color:white;
+  font-size:10px;
   background-color:rgb(137, 216, 121);
   line-height:30px;
   display: inline-block;
@@ -93,6 +93,7 @@ section{
   width:100px;
   border-radius:4px;
 }
+
 .line:hover{
   opacity:0.4;
 }
