@@ -103,16 +103,16 @@ section{
   height:200px;
 }
 
-.thumbnails{
+.thumbnails1,.thumbnails2,.thumbnails3,.thumbnails4{
   display: grid;
   grid-template-columns:repeat(5,56px);
   gap:5px;
 }
-.thumbnails li{
+.thumbnails1 li,.thumbnails2 li,.thumbnails3 li,.thumbnails4 li{
   cursor:pointer;
   opacity:0.4;
 }
-.thumbnails li:hover,.thumbnails li.current{
+.thumbnails1 li:hover,.thumbnails1 li.current,.thumbnails2 li:hover,.thumbnails2 li.current,.thumbnails3 li:hover,.thumbnails3 li.current,.thumbnails4 li:hover,.thumbnails4 li.current{
   opacity:1;
 }
 
@@ -122,7 +122,7 @@ ul{
   margin: 0;
 }
 
-.thumbnails img{
+.thumbnails1 img,.thumbnails2 img,.thumbnails3 img,.thumbnails4 img{
   width:56px;
 }
 
