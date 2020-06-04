@@ -1,3 +1,4 @@
+
 header{
   text-align: center;
 }
@@ -13,6 +14,7 @@ header a:hover{
 body{
   font-size:14px;
   margin:0 auto;
+  font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 .container{
   height:650px;
@@ -68,20 +70,17 @@ section{
 }
 
 .info h1{
-  color:black;
-  font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color:#333333;
   font-size:25px;
   margin:0;
 }
 .explain{
   color:rgb(184, 184, 184);
-  font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   margin:0;
 }
 
 .price{
   color:rgb(137, 216, 121);
-  font-family: "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-size:20px;
   font-weight:bold;
   margin:0 20px;
@@ -92,6 +91,7 @@ section{
 .prices{
   margin-top:20px;
   margin-bottom:20px;
+  font-family: "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 .line{
@@ -110,21 +110,21 @@ section{
   opacity:0.4;
 }
 
-#main1,#main2,#main3,#main4{
+.main{
   width:200px;
   height:200px;
 }
 
-.thumbnails1,.thumbnails2,.thumbnails3,.thumbnails4{
+.thumbnails{
   display: grid;
   grid-template-columns:repeat(5,56px);
   gap:5px;
 }
-.thumbnails1 li,.thumbnails2 li,.thumbnails3 li,.thumbnails4 li{
+.thumbnails li{
   cursor:pointer;
   opacity:0.4;
 }
-.thumbnails1 li:hover,.thumbnails1 li.current,.thumbnails2 li:hover,.thumbnails2 li.current,.thumbnails3 li:hover,.thumbnails3 li.current,.thumbnails4 li:hover,.thumbnails4 li.current{
+.thumbnails li:hover,.thumbnails li.current{
   opacity:1;
 }
 
@@ -134,7 +134,7 @@ ul{
   margin: 0;
 }
 
-.thumbnails1 img,.thumbnails2 img,.thumbnails3 img,.thumbnails4 img{
+.thumbnails img{
   width:56px;
 }
 
