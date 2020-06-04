@@ -2,6 +2,8 @@
 body{
     margin-top:50px;
     height:100%;
+    color:#333333;
+    font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 .container{
   height:650px;
@@ -33,8 +35,6 @@ body{
   position:absolute;
   top:310px;
   left:35%;
-  color:black;
-  font-family:'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-size:30px;
   text-decoration: none;
 }
@@ -50,8 +50,7 @@ body{
   letter-spacing: 3px;
   width: 330px;
   text-align: center;
-  font-family: 'Noto Serif JP',"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo",'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  text-align: center;
+  
   }
 
 .info h1{
